@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Box-sizing</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+  <div id="container" class="main-box" >
+    <p id="container-text">Container height:50px; width:50px;</p> 
+    <input onchange="changeC()" class="container" id="height" type="range" min="0" max="200" default value="50" />
+    <input onchange="changeC()" class="container" id="width" type="range" min="0" max="200" default value="50" />
+  </div>
+  <div id="margin" class="main-box"  >
+    <p id="margin-text">margin:(T)20px (L)20px (B)20px (R)20px;</p>
+    <input onchange="changeM()" class="margin" id="margin-top" type="range" min="0" max="70" default value="20" />
+    <input onchange="changeM()" class="margin" id="margin-right" type="range" min="0" max="70" default value="20" />
+    <input onchange="changeM()" class="margin" id="margin-bottom" type="range" min="0" max="70" default value="20" />
+    <input onchange="changeM()" class="margin" id="margin-left" type="range" min="0" max="70" default value="20" />
+  </div>
+  <div id="border" class="main-box"  >
+    <p id="border-text">border:(T)10px (L)10px (B)10px (R)10px;</p>
+    <input onchange="changeB()" class="border" id="border-top" type="range" min="0" min="70" default value="10" />
+    <input onchange="changeB()" class="border" id="border-right" type="range" min="0" min="70" default value="10" />
+    <input onchange="changeB()" class="border" id="border-bottom" type="range" min="0" min="70" default value="10" />
+    <input onchange="changeB()" class="border" id="border-left" type="range" min="0" min="70" default value="10" />
+  </div>
+  <div id="border-radius" class="main-box"  >
+    <p id="border-radius-text">border-radius:(T)0% (L)0% (B)0% (R)0%;</p>
+    <input  onchange="changeBR()"  id="border-radius-top" type="range" min="0" min="70" default value="0" />
+    <input onchange="changeBR()" id="border-radius-right" type="range" min="0" min="70" default value="0" />
+    <input onchange="changeBR()" id="border-radius-bottom" type="range" min="0" min="70" default value="0" />
+    <input onchange="changeBR()" id="border-radius-left" type="range" min="0" min="70" default value="0" />
+  </div>
+  <div id="padding" class="main-box"  >
+    <p id="padding-text">padding:(T)15px (L)15px (B)15px (R)15px;</p>
+    <input  class="padding" onchange="changeP()" id="padding-top" type="range" min="0" min="70" default value="15" />
+    <input  class="padding" onchange="changeP()" id="padding-right" type="range" min="0" min="70" default value="15" />
+    <input  class="padding" onchange="changeP()" id="padding-bottom" type="range" min="0" min="70" default value="15" />
+    <input class="padding" onchange="changeP()" id="padding-left" type="range" min="0" min="70" default value="15" />
+  </div>
+  <div id="box" class="main-box"  >
+    <div class="items" id="margin-box"> 
+        <div class="items" id="border-box">
+          <div class="items" id="padding-box">
+            <div class="items" id="container-box">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+   <script src="script.js" ></script>
+</body>
+</html>
